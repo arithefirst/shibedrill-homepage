@@ -5,7 +5,6 @@ import Footer from '../layouts/Footer.astro';
 import Render from '../components/PostPreview.astro';
 import Prose from '../components/Prose.astro';
 import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
 
 const posts = await getCollection('posts');
 ---
@@ -16,7 +15,7 @@ const posts = await getCollection('posts');
     <Navbar />
     <main id="posts" class="my-6 flex gap-4 align-center justify-center flex-wrap">
       {
-        posts.map((post: CollectionEntry<'posts'>) => (
+        posts.map((post)=> (
           <div class="card bg-base-300 w-1/2 shadow-xl">
             <div class="card-body">
               <h2 class="card-title text-2xl">{post.data.title}</h2>
