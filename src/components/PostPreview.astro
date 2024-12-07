@@ -1,8 +1,10 @@
 ---
-import { render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import { marked } from 'marked';
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
 const { post } = Astro.props;
-
-const { Content } = await render(post);
 ---
 
-<Content />
+<div set:html={marked.parse(post.body.split('!-- more --')[0].slice(0, -2))}></div>
