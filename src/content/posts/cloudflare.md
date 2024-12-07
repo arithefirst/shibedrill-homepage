@@ -1,7 +1,7 @@
 ---
 'title': 'The Sins of Cloudflare'
 'date': 2024-11-28
-'tags': ['rant', 'fish']
+'tags': ['rant']
 ---
 
 Cloudflare is a large enterprise web service provider, which offers services such as DNS, DDoS protection, content delivery, reverse proxying, WAF, and many other things that I am not quite qualified to talk about. In short, though, Cloudflare runs the internet. So much so, in fact, that there has been [three](https://blog.cloudflare.com/cloudflare-incident-on-september-17-2024) [major](https://blog.cloudflare.com/cloudflare-incident-on-november-14-2024-resulting-in-lost-logs) [outages](https://blog.cloudflare.com/cloudflare-incident-on-june-20-2024) in 2024 alone, affecting up to hundreds of thousands of customers each time.
