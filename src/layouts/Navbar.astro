@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+import Cheesecake from '../images/cheesecake.png';
+import Archive from '../images/icons/folder-zip-fill.svg';
+import Blog from '../images/icons/rss-fill.svg';
+import Tag from '../images/icons/tag-2-fill.svg';
+import About from '../images/icons/user-1-fill.svg';
+---
+
+<nav class="navbar justify-center bg-base-300">
+  <a href="/" class="btn btn-ghost text-lg">
+    <Image alt="Cheesecake, the harbinger of the end times" src={Cheesecake} class="h-10 w-10" />
+    shibedrill.site
+  </a>
+</nav>
+
+<nav class="flex justify-center bg-base-200">
+  <ul class="menu menu-horizontal justify-center">
+    <li><a href="/"><Image alt="mingcute:rss-fill" src={Blog} />Blog</a></li>
+    <li><a href="/tags"><Image alt="mingcute:tag-2-fill" src={Tag} />Tags</a></li>
+    <li><a href="/archive"><Image alt="mingcute:folder-zip-fill" src={Archive} />Archive</a></li>
+    <li><a href="/about"><Image alt="mingcute:user-1-fill" src={About} />About</a></li>
+    <li><a href="/contact"><Image alt="mingcute:rss-fill" src={Blog} />Contact</a></li>
+  </ul>
+</nav>
