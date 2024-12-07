@@ -1,10 +1,10 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
 import Prose from '../../components/Prose.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
-  return posts.map((post) => ({
+  return posts.map((post: CollectionEntry<'posts'>) => ({
     params: { id: post.id },
     props: { post }
   }));
