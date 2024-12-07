@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<head>
+  <title>{title}</title>
+  <meta name="charset" content="utf-8" />
+  <meta name="og:title" content={title} />
+  <meta name="twitter:title" content={title} />
+  <meta name="description" content={description} />
+  <meta property="og:description" content={description} />
+  <meta name="twitter:description" content={description} />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <slot name="favicon">
+    <link rel="icon" href="/cheesecake.png" />
+  </slot>
+  <slot name="extra-content" />
+</head>
