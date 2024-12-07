@@ -7,11 +7,12 @@ export default {
     themes: [
       {
         dark: {
-          primary: '#23b0ff',
-          secondary: '#2286c0',
-          accent: '#7692ff',
-          neutral: '#ff00ff',
-          'base-100': '#1d212c',
+          primary: '#95b7e0',
+          secondary: '#205491',
+          accent: '#3582df',
+          neutral: '#152637',
+          'base-100': '#060b10',
+          'base-content': '#e5ebf3',
           info: '#0000ff',
           success: '#248232',
           warning: '#fde74c',
