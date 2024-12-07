@@ -2,17 +2,28 @@
 import Head from '../layouts/Head.astro';
 import Navbar from '../layouts/Navbar.astro';
 import Footer from '../layouts/Footer.astro';
+import Render from '../components/PostPreview.astro'
 import { getCollection } from 'astro:content';
 
-const allBlogPosts = await getCollection('posts');
+const posts = await getCollection('posts');
 ---
 
 <html lang="en">
   <Head title="Shibe Drill | Official Site" description="Shibe Drill's Personal Website" />
   <body class="">
     <Navbar />
-    <main>
-
+    <main id="posts" class="my-6 flex gap-4 align-center justify-center flex-wrap">
+      {posts.map((post, index: number) => (
+        <div class="card bg-base-300 w-1/2 shadow-xl">
+          <div class="card-body">
+            <h2 class="card-title text-2xl">{post.data.title}</h2>
+            <Render post={post}/>
+            <div class="card-actions">
+              <a class="btn btn-sm btn-primary" href=`/post/${post.id}`>Read</a>
+            </div>
+          </div>
+        </div>
+      ))}
     </main>
     <Footer />
   </body>
