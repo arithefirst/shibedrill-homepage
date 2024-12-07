@@ -1,0 +1,28 @@
+---
+import Head from '../layouts/Head.astro';
+import Navbar from '../layouts/Navbar.astro';
+import Footer from '../layouts/Footer.astro';
+import Prose from '../components/Prose.astro';
+import Content from '../content/contact.md';
+---
+
+<html lang="en">
+  <Head title="Shibe Drill | Contact Me" description="Shibe Drill's Personal Website" />
+  <body>
+    <Navbar />
+
+    <main class="my-6 flex gap-4 align-center justify-center flex-wrap">
+      <div class="card bg-base-300 lg:w-3/4 w-full lg:mx-0 mx-6 shadow-xl">
+        <div class="card-body">
+          <Prose>
+            <h2 class="card-title text-2xl">Contact Me</h2>
+            <hr class="border-white border-1 my-4 w-48" />
+            <Content />
+          </Prose>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+  </body>
+</html>
