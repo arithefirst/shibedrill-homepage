@@ -20,7 +20,7 @@ posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
       {
         // Do not try to add type saftey here, the astro compiler fucking shits itself
         posts.map((post) => (
-          <div class="card bg-base-300 w-1/2 shadow-xl">
+          <div class="card bg-base-300 lg:w-1/2 w-full lg:mx-0 mx-6 shadow-xl">
             <div class="card-body">
               <h2 class="card-title text-2xl">{post.data.title}</h2>
               <Prose>
