@@ -7,6 +7,9 @@ import Prose from '../components/Prose.astro';
 import { getCollection } from 'astro:content';
 
 const posts = await getCollection('posts');
+
+// Sort posts by date
+posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
 ---
 
 <html lang="en">
@@ -15,6 +18,7 @@ const posts = await getCollection('posts');
     <Navbar />
     <main id="posts" class="my-6 flex gap-4 align-center justify-center flex-wrap">
       {
+        // Do not try to add type saftey here, the astro compiler fucking shits itself
         posts.map((post) => (
           <div class="card bg-base-300 w-1/2 shadow-xl">
             <div class="card-body">
