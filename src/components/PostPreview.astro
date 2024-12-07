@@ -7,4 +7,4 @@ interface Props {
 const { post } = Astro.props;
 ---
 
-<div set:html={marked.parse(post.body.split('!-- more --')[0].slice(0, -2))}></div>
+<div set:html={marked.parse(post.body.split('!-- more --')[0].slice(0, -2))} />
