@@ -1,0 +1,21 @@
+---
+import Head from '../layouts/Head.astro';
+import StaticMD from '../layouts/StaticMD.astro';
+import Content from '../content/about.md';
+import { Image } from 'astro:assets';
+import Cheesecake from '../images/cheesecake.png';
+---
+
+<html lang="en">
+  <Head title="Shibe Drill | About Me" description="Shibe Drill's Personal Website" />
+  <StaticMD>
+    <div slot="header">About Me</div>
+    <div slot="body">
+      <Content />
+    </div>
+    <div slot="image" class="w-fit h-fit mx-auto bg-accent py-2 px-12 mt-4 rounded-lg">
+      <Image src={Cheesecake} alt="Cheesecake, the harbinger of the end times" class="h-48 w-48 mx-auto" />
+      <p class="text-center text-accent-content"><i>Cheesecake, the harbinger of end times</i></p>
+    </div>
+  </StaticMD>
+</html>
