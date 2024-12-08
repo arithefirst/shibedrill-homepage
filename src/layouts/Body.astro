@@ -1,0 +1,10 @@
+---
+import Navbar from './Navbar.astro';
+import Footer from './Footer.astro';
+---
+
+<body class="flex flex-col h-screen">
+  <Navbar />
+  <slot name="content" />
+  <Footer />
+</body>

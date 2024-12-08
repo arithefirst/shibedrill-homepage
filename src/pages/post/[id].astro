@@ -1,6 +1,5 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
-import Prose from '../../components/Prose.astro';
 import StaticMD from '../../layouts/StaticMD.astro';
 
 export async function getStaticPaths() {
@@ -15,23 +14,19 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<html class="overscroll-y-none">
+<html lang="en" class="overscroll-y-none">
   <head>
     <title>{post.data.title}</title>
     <meta name="charset" content="utf-8" />
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   </head>
-  <body>
-    <article>
-      <StaticMD>
-        <Content slot="body" />
-        <div id="post-info" slot="header">
-          <h2 class="card-title text-2xl mb-2">{post.data.title}</h2>
-          {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-          <span class="mx-2">-</span>
-          {post.data.tags.map((tag) => <span class="badge badge-accent mr-1 text-accent-content">#{tag} </span>)}
-        </div>
-      </StaticMD>
-    </article>
-  </body>
+  <StaticMD>
+    <Content slot="body" />
+    <div id="post-info" slot="header">
+      <h2 class="card-title text-2xl mb-2">{post.data.title}</h2>
+      {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+      <span class="mx-2">-</span>
+      {post.data.tags.map((tag) => <span class="badge badge-accent mr-1 text-accent-content">#{tag} </span>)}
+    </div>
+  </StaticMD>
 </html>

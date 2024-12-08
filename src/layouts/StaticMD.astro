@@ -1,12 +1,10 @@
 ---
-import Footer from './Footer.astro';
-import Navbar from './Navbar.astro';
 import Prose from '../components/Prose.astro';
+import Body from './Body.astro';
 ---
 
-<body>
-  <Navbar />
-  <main class="my-6 flex gap-4 align-center justify-center flex-wrap">
+<Body>
+  <main slot="content" class="my-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
     <div class="card bg-base-300 lg:w-3/4 w-full lg:mx-0 mx-6 shadow-xl">
       <div class="card-body">
         <Prose>
@@ -18,5 +16,4 @@ import Prose from '../components/Prose.astro';
       </div>
     </div>
   </main>
-  <Footer />
-</body>
+</Body>

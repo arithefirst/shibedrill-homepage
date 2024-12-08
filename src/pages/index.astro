@@ -1,9 +1,8 @@
 ---
 import Head from '../layouts/Head.astro';
-import Navbar from '../layouts/Navbar.astro';
-import Footer from '../layouts/Footer.astro';
 import Render from '../components/PostPreview.astro';
 import Prose from '../components/Prose.astro';
+import Body from '../layouts/Body.astro';
 import { getCollection } from 'astro:content';
 
 const posts = await getCollection('posts');
@@ -14,9 +13,8 @@ posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
 
 <html lang="en" class="overscroll-y-none">
   <Head title="Shibe Drill | Official Site" description="Shibe Drill's Personal Website" />
-  <body class="">
-    <Navbar />
-    <main id="posts" class="my-6 flex gap-4 align-center justify-center flex-wrap">
+  <Body>
+    <main slot="content" id="posts" class="my-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
       {
         // Do not try to add type safety here, the astro compiler fucking shits itself
         posts.map((post) => (
@@ -44,6 +42,5 @@ posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
         ))
       }
     </main>
-    <Footer />
-  </body>
+  </Body>
 </html>
