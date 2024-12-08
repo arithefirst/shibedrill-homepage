@@ -14,7 +14,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<html>
+<html class="overscroll-y-none">
   <head>
     <title>{post.data.title}</title>
     <meta name="charset" content="utf-8" />

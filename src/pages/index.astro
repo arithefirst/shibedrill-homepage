@@ -12,7 +12,7 @@ const posts = await getCollection('posts');
 posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
 ---
 
-<html lang="en">
+<html lang="en" class="overscroll-y-none">
   <Head title="Shibe Drill | Official Site" description="Shibe Drill's Personal Website" />
   <body class="">
     <Navbar />
