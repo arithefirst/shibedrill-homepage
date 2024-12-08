@@ -1,7 +1,7 @@
 ---
 import Head from '../layouts/Head.astro';
 import Body from '../layouts/Body.astro';
-import Badge from '../components/Badge.astro'
+import Badge from '../components/Badge.astro';
 import { getCollection } from 'astro:content';
 const posts = await getCollection('posts');
 posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
