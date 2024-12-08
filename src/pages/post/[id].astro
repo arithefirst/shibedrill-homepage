@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import Prose from '../../components/Prose.astro';
+import StaticMD from '../../layouts/StaticMD.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -21,17 +22,16 @@ const { Content } = await render(post);
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   </head>
   <body>
-    <Prose>
-      <article>
-        <h1 class="text-4xl">{post.data.title}</h1>
-        <h2 class="text-2xl">
-          Published {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-        </h2>
-        <div id="tags">
-          {post.data.tags.map((tag: string) => <span class="mx-0.5">{tag}</span>)}
+    <article>
+      <StaticMD>
+        <Content slot="body" />
+        <div id="post-info" slot="header">
+          <h2 class="card-title text-2xl mb-2">{post.data.title}</h2>
+          {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          <span class="mx-2">-</span>
+          {post.data.tags.map((tag) => <span class="badge badge-accent mr-1 text-accent-content">#{tag} </span>)}
         </div>
-        <Content />
-      </article>
-    </Prose>
+      </StaticMD>
+    </article>
   </body>
 </html>

@@ -10,8 +10,8 @@ import Prose from '../components/Prose.astro';
     <div class="card bg-base-300 lg:w-3/4 w-full lg:mx-0 mx-6 shadow-xl">
       <div class="card-body">
         <Prose>
-          <h2 class="card-title text-2xl"><slot name="header" /></h2>
-          <hr class="border-white border-1 my-4 w-48" />
+          <slot name="header" />
+          <hr class="border-white border-1 my-4" />
           <slot name="body" />
         </Prose>
         <slot name="image" />
