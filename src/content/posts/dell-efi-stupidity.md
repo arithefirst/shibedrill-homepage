@@ -1,7 +1,7 @@
 ---
 'title': 'Tracking down an obscure Linux Kernel regression'
 'date': 2024-11-29
-'tags': ['linux', 'mine']
+'tags': ['linux']
 ---
 
 _This post has been copied from [my Tumblr blog](https://tumblr.com/shibedrill1). If you've seen it before, this is why._
