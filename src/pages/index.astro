@@ -2,6 +2,7 @@
 import Head from '../layouts/Head.astro';
 import Render from '../components/PostPreview.astro';
 import Prose from '../components/Prose.astro';
+import Badge from '../components/Badge.astro';
 import Body from '../layouts/Body.astro';
 import { getCollection } from 'astro:content';
 
@@ -25,7 +26,7 @@ posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
                 {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                 <span class="mx-2">-</span>
                 {post.data.tags.map((tag) => (
-                  <span class="badge badge-accent mr-1 text-accent-content">#{tag} </span>
+                  <Badge tag={tag} />
                 ))}
                 <hr class="border-1 border-white mt-3" />
               </div>

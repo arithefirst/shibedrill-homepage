@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import StaticMD from '../../layouts/StaticMD.astro';
+import Badge from '../../components/Badge.astro'
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -26,7 +27,7 @@ const { Content } = await render(post);
       <h2 class="card-title text-2xl mb-2">{post.data.title}</h2>
       {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
       <span class="mx-2">-</span>
-      {post.data.tags.map((tag) => <span class="badge badge-accent mr-1 text-accent-content">#{tag} </span>)}
+      {post.data.tags.map((tag) => <Badge tag={tag} />)}
     </div>
   </StaticMD>
 </html>

@@ -1,6 +1,7 @@
 ---
 import Head from '../layouts/Head.astro';
 import Body from '../layouts/Body.astro';
+import Badge from '../components/Badge.astro'
 import { getCollection } from 'astro:content';
 const posts = await getCollection('posts');
 posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
@@ -27,7 +28,7 @@ posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
                       <span class="text-base-content px-1.5">::</span>
                     </a>
                     {post.data.tags.map((tag) => (
-                      <span class="badge badge-accent mr-1 text-accent-content">#{tag} </span>
+                      <Badge tag={tag} />
                     ))}
                   </li>
                 ))
