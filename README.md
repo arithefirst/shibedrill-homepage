@@ -1,6 +1,9 @@
 # Shibedrill Homepage
 A custom blog website made for [@shibedrill](https://github.com/shibedrill)
 
+## Techstack
+![img](https://go-skill-icons.vercel.app/api/icons?i=astro,daisyui,tailwind)
+
 ## Deploying locally
 1. Clone this repository<br>
    `git clone https://github.com/arithefirst/shibedrill-homepage.git`
