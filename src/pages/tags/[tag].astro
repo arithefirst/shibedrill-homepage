@@ -2,8 +2,6 @@
 import { getCollection } from 'astro:content';
 import Head from '../../layouts/Head.astro';
 import Body from '../../layouts/Body.astro';
-import Render from '../../components/PostPreview.astro';
-import Prose from '../../components/Prose.astro';
 import Badge from '../../components/Badge.astro';
 const tag: string = Astro.params.tag;
 
@@ -23,7 +21,7 @@ const posts = await getCollection('posts', ({ data }) => {
 ---
 
 <html lang="en" class="overscroll-y-none">
-  <Head title="Shibe Drill | Tags" description="Shibe Drill's Personal Website" />
+  <Head title={`Shibe Drill | #${tag}`} description="Shibe Drill's Personal Website" />
   <Body>
     <main slot="content" class="my-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
       <div class="card bg-base-300 lg:w-1/2 w-full h-fit lg:mx-0 mx-6 shadow-xl">
