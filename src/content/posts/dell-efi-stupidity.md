@@ -1,6 +1,6 @@
 ---
 'title': 'Tracking down an obscure Linux Kernel regression'
-'date': 2024-11-29
+'date': 2024-11-29 EST
 'tags': ['linux']
 ---
 
