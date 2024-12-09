@@ -20,4 +20,5 @@ A custom blog website made for [@shibedrill](https://github.com/shibedrill)
    - For production<br>
      - `bun run build`
      - Copy all of the files from the new `dist` directory into the root of your http server's main directory. This is usually `/srv/http/` or `/var/www/html/`
+     - Copy .htaccess into the same directory
      - goto `http://localhost` in a browser
