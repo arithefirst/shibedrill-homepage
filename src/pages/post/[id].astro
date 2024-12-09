@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
 import StaticMD from '../../layouts/StaticMD.astro';
+import Head from '../../layouts/Head.astro';
 import Badge from '../../components/Badge.astro';
 
 export async function getStaticPaths() {
@@ -16,9 +17,7 @@ const { Content } = await render(post);
 ---
 
 <html lang="en" class="overscroll-y-none">
-  <head>
-    <title>Shibe Drill | {post.data.title}</title>
-  </head>
+  <Head title={`Shibe Drill | {post.data.title}`} description="An article written by Shibe Drill"/>
   <StaticMD>
     <Content slot="body" />
     <div id="post-info" slot="header">
