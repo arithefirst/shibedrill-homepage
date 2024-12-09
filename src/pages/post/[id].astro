@@ -1,8 +1,12 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
-import StaticMD from '../../layouts/StaticMD.astro';
 import Head from '../../layouts/Head.astro';
 import Badge from '../../components/Badge.astro';
+import Body from '../../layouts/Body.astro';
+import Prose from '../../components/Prose.astro';
+import NextPrev from '../../components/NextPrev.svelte';
+
+const posts = await getCollection('posts');
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -13,18 +17,29 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const index = posts.findIndex((p) => p.id === post.id);
 const { Content } = await render(post);
 ---
 
 <html lang="en" class="overscroll-y-none">
-  <Head title={`Shibe Drill | {post.data.title}`} description="An article written by Shibe Drill" />
-  <StaticMD>
-    <Content slot="body" />
-    <div id="post-info" slot="header">
-      <h2 class="card-title text-2xl mb-2">{post.data.title}</h2>
-      {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-      <span class="mx-2">-</span>
-      {post.data.tags.map((tag) => <Badge tag={tag} />)}
-    </div>
-  </StaticMD>
+  <Head title={`Shibe Drill | ${post.data.title}`} description="An article written by Shibe Drill" />
+  <Body>
+    <main slot="content" class="my-6 mx-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
+      <div class="card bg-base-300 lg:w-1/2 w-full lg:mx-0 shadow-xl">
+        <div class="card-body">
+          <div id="post-info">
+            <h2 class="card-title text-2xl mb-2">{post.data.title}</h2>
+            {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            <span class="mx-2">-</span>
+            {post.data.tags.map((tag) => <Badge tag={tag} />)}
+          </div>
+          <hr class="border-white border-1 my-4" />
+          <Prose>
+            <Content />
+          </Prose>
+          <NextPrev index={index} posts={posts} />
+        </div>
+      </div>
+    </main>
+  </Body>
 </html>
