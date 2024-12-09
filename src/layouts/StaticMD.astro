@@ -7,9 +7,9 @@ import Body from './Body.astro';
   <main slot="content" class="my-6 mx-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
     <div class="card bg-base-300 lg:w-3/4 w-full lg:mx-0 mx-6 shadow-xl">
       <div class="card-body">
-        <Prose>
           <slot name="header" />
           <hr class="border-white border-1 my-4" />
+        <Prose>
           <slot name="body" />
         </Prose>
         <slot name="image" />
