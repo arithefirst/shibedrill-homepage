@@ -23,7 +23,9 @@ posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
             <div class="card-body">
               <h2 class="card-title text-2xl">{post.data.title}</h2>
               <div id="post-info">
-                <span class="text-accent">{post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                <span class="text-accent">
+                  {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </span>
                 <span class="mx-2">-</span>
                 {post.data.tags.map((tag) => (
                   <Badge tag={tag} />

@@ -12,28 +12,31 @@ async function getTagCount(tag: string): Promise<string> {
     return data.tags.includes(tag);
   });
 
-  return `${posts.length} Post${posts.length == 1 ? '' : 's'}`
+  return `${posts.length} Post${posts.length == 1 ? '' : 's'}`;
 }
-
 ---
 
 <html lang="en" class="overscroll-y-none">
-<Head title="Shibe Drill | Tags" description="Shibe Drill's Personal Website" />
-<Body>
-<main slot="content" class="my-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
-  <div class="card bg-base-300 lg:w-1/2 w-full h-fit lg:mx-0 mx-6 shadow-xl">
-    <div class="card-body">
-      <h2 class="card-title text-2xl">All Tags</h2>
-      <hr class="border-white border-1 my-4" />
-      <div>
-        <ul class="list-disc list-inside">
-          {tags.map((tag) => (
-            <li><Badge tag={tag}/> ({getTagCount(tag)})</li>
-          ))}
-        </ul>
+  <Head title="Shibe Drill | Tags" description="Shibe Drill's Personal Website" />
+  <Body>
+    <main slot="content" class="my-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
+      <div class="card bg-base-300 lg:w-1/2 w-full h-fit lg:mx-0 mx-6 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title text-2xl">All Tags</h2>
+          <hr class="border-white border-1 my-4" />
+          <div>
+            <ul class="list-disc list-inside">
+              {
+                tags.map((tag) => (
+                  <li>
+                    <Badge tag={tag} /> ({getTagCount(tag)})
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</main>
-</Body>
+    </main>
+  </Body>
 </html>
