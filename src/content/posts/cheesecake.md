@@ -12,7 +12,7 @@ This is Cheesecake. Everybody say "Hi, Cheesecake!"
 
 <!-- more -->
 
-Cheesecake is a [Wild Republic](https://www.wildrepublic.com) [Cuddlekins Fawn](https://shop.wildrepublic.com/products/fawn-stuffed-animal-12?variant=49246967333174) (not sponsored) that was gifted to me for Christmas one year, by my friend Lilu.  
+Cheesecake is a [Wild Republic](https://www.wildrepublic.com) [Cuddlekins Fawn](https://shop.wildrepublic.com/products/fawn-stuffed-animal-12?variant=49246967333174) (not sponsored) that was gifted to me for Christmas one year, by my friend Lilu.
 
 <p align="center">
   <img src="/lilu-convo.png" width="500" alt="A screenshot of a Discord conversation between me and my friend, who asks to be mentioned in this page as 'the Cheesecake harbinger'."/>

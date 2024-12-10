@@ -23,7 +23,7 @@
     {#if index > 0}
       <div class="w-1/2">
         <a class="btn btn-primary btn-sm" href="/post/{posts[index - 1].id}" title={posts[index - 1].data.title}
-        ><span>←</span>{truncate(posts[index - 1].data.title)}</a
+          ><span>←</span>{truncate(posts[index - 1].data.title)}</a
         >
       </div>
     {/if}
