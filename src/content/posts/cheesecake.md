@@ -12,6 +12,6 @@ This is Cheesecake. Everybody say "Hi, Cheesecake!"
 
 <!-- more -->
 
-Cheesecake is a [Wild Republic](https://www.wildrepublic.com) white-tailed deer (*Odocoileus virginianus*) that a good friend of mine gifted to me for Christmas one year. I love plushies and all things deer-related (especially white-tailed deer), so ever since I got her, she has been one of my most prized belongings. And just recently, I decided to make her the mascot of my website. So make sure to say hi to her when you see her.
+Cheesecake is a [Wild Republic](https://www.wildrepublic.com) white-tailed deer (_Odocoileus virginianus_) that a good friend of mine gifted to me for Christmas one year. I love plushies and all things deer-related (especially white-tailed deer), so ever since I got her, she has been one of my most prized belongings. And just recently, I decided to make her the mascot of my website. So make sure to say hi to her when you see her.
 
 Her favorite hobby? Zeroing the master boot records on people's hard drives.
