@@ -12,6 +12,12 @@ This is Cheesecake. Everybody say "Hi, Cheesecake!"
 
 <!-- more -->
 
-Cheesecake is a [Wild Republic](https://www.wildrepublic.com) [Cuddlekins Fawn](https://shop.wildrepublic.com/products/fawn-stuffed-animal-12?variant=49246967333174) that a good friend of mine gifted to me for Christmas one year. I love plushies and all things deer-related (especially white-tailed deer), so ever since I got her, she has been one of my most prized belongings. And just recently, I decided to make her the mascot of my website. So make sure to say hi to her when you see her.
+Cheesecake is a [Wild Republic](https://www.wildrepublic.com) [Cuddlekins Fawn](https://shop.wildrepublic.com/products/fawn-stuffed-animal-12?variant=49246967333174) (not sponsored) that was gifted to me for Christmas one year, by my friend Lilu.  
+
+<p align="center">
+  <img src="/lilu-convo.png" width="500" alt="A screenshot of a Discord conversation between me and my friend, who asks to be mentioned in this page as 'the Cheesecake harbinger'."/>
+</p>
+
+I love plushies and all things deer-related (especially white-tailed deer), so ever since I got her, she has been one of my most prized belongings. And just recently, I decided to make her the mascot of my website. So make sure to say hi to her when you see her.
 
 Her favorite hobby? Zeroing the partition tables on people's hard drives.
