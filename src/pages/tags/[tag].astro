@@ -18,6 +18,8 @@ export async function getStaticPaths() {
 const posts = await getCollection('posts', ({ data }) => {
   return data.tags.includes(tag);
 });
+
+posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date))
 ---
 
 <html lang="en" class="overscroll-y-none">
