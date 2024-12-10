@@ -1,6 +1,6 @@
 ---
 'title': 'The Sins of Cloudflare'
-'date': 2024-11-28
+'date': 2024-11-28 EST
 'tags': ['rant']
 ---
 

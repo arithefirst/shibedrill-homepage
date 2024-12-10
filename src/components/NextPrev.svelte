@@ -19,6 +19,7 @@
     <span class="flex-shrink mx-4 text-base-content">Thanks for Reading! Read another post?</span>
     <div class="flex-grow border-t border-white border-1"></div>
   </div>
+<<<<<<< HEAD
 
   {#if index > 0}
     <a class="link-primary" href="/post/{posts[index - 1].id}" title={posts[index - 1].data.title}
@@ -30,4 +31,22 @@
       >{truncate(posts[index + 1].data.title)} →</a
     >
   {/if}
+=======
+  <div class="flex justify-center">
+    {#if index > 0}
+      <div class="w-1/2">
+        <a class="btn btn-primary btn-sm" href="/post/{posts[index - 1].id}" title={posts[index - 1].data.title}
+          ><span>←</span>{truncate(posts[index - 1].data.title)}</a
+        >
+      </div>
+    {/if}
+    {#if posts[index + 1]}
+      <div class="w-1/2">
+        <a class="btn btn-primary btn-sm" href="/post/{posts[index + 1].id}" title={posts[index + 1].data.title}
+          >{truncate(posts[index + 1].data.title)}<span>→</span></a
+        >
+      </div>
+    {/if}
+  </div>
+>>>>>>> master
 </div>

@@ -11,3 +11,7 @@ My interests include infrastructure, security, systems software, operating syste
 Hope you enjoy reading my blog posts! I'll update this site with new posts every so often if I find something interesting to ramble about.
 
 Feel free to [contact me](/contact) if you want to chat or work on a project together!
+
+This website was made by [April Hall](https://www.arithefirst.com/), go check her out if you like it.
+
+Have a good day!

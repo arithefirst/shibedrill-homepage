@@ -15,16 +15,17 @@ Check out the links below to get in touch with me, or to see the stuff I make & 
 
 The message below has been signed with my PGP private key. Thus, you can confirm that this page, and any other page with a signed message, belongs to the same person.
 
-```
+```text
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-This message was uploaded by River to https://shibedrill.site on 2024-11-28
+This message was uploaded by River to https://www.shibedrill.site on 2024-12-09
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQQyHxm2NU175rKAsapf4MsllF76ogUCZ0jfxQAKCRBf4MsllF76
-ojuYAP0cCfgSFHsihnCLoXH19eTSPlF4A1LWtKWeQ57iS/H4pAEA1dXUyyuePZ5A
-bsRUrq7ClCIw/FtB8r1yH+YZsIvP2wg=
-=NK5C
+iHUEARYKAB0WIQQyHxm2NU175rKAsapf4MsllF76ogUCZ1dxYAAKCRBf4MsllF76
+os2qAP90YbUMzN8Q0hMHTSw4gI/npmKLoPTvVZvbiAiVuIHa9QD+KhSmNIhWPF7w
+kN4M9Jwu4kXVpmKu8/B7UVF5dwhSigI=
+=vHC8
 -----END PGP SIGNATURE-----
+
 ```
