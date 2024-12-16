@@ -2,8 +2,8 @@
   const { posts, index } = $props();
 
   function truncate(str) {
-    if (str.length > 30) {
-      let truncated = str.slice(0, 30);
+    if (str.length > 20) {
+      let truncated = str.slice(0, 20);
       if (truncated.endsWith(' ')) {
         truncated = truncated.trimEnd();
       }
