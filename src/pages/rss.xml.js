@@ -1,5 +1,6 @@
 import rss, { pagesGlobToRssItems } from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import { marked } from 'marked';
 
 export async function GET(context) {
     const posts = await getCollection('posts');
@@ -9,8 +10,9 @@ export async function GET(context) {
         site: context.site,
         items: posts.map((post) => ({
             title: post.data.title,
-            date: post.data.pubDate,
+            pubDate: post.data.date,
             link: `/post/${post.id}`,
+            description: post.body.split('!-- more --')[0].slice(0, -2),
         })),
     })
 }
