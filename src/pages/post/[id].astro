@@ -17,6 +17,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+posts.sort((a, b) => Date.parse(a.data.date) - Date.parse(b.data.date));
 const index = posts.findIndex((p) => p.id === post.id);
 const { Content } = await render(post);
 ---
