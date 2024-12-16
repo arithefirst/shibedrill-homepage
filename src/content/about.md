@@ -12,6 +12,8 @@ Hope you enjoy reading my blog posts! I'll update this site with new posts every
 
 Feel free to [contact me](/contact) if you want to chat or work on a project together!
 
-This website was made by [April Hall](https://www.arithefirst.com/), go check her out if you like it.
+A few notes:
+- [This website's posts are available through RSS at /rss.xml](/rss.xml)
+- This website was made by [April Hall](https://www.arithefirst.com/), go check her out if you like it.
 
 Have a good day!
