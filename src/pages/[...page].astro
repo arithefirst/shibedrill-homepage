@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import Head from '../layouts/Head.astro';
+import Prose from '../components/Prose.astro';
+import Badge from '../components/Badge.astro';
+import Render from '../components/PostPreview.astro';
+import Navbar from '../layouts/Navbar.astro';
+import Footer from '../layouts/Footer.astro';
+import Pagination from '../components/Pagination.svelte';
+
+export async function getStaticPaths({ paginate }) {
+  const posts = await getCollection('posts');
+  posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
+  return paginate(posts, { pageSize: 2 });
+}
+
+const { page } = Astro.props;
+---
+
+<html lang="en" class="overscroll-y-none">
+<Head title="Shibe Drill | Official Site" description="Shibe Drill's Personal Website" />
+<body class="flex flex-col h-screen">
+<Navbar />
+<main id="posts" class="my-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
+  {
+    // Do not try to add type safety here, the astro compiler fucking shits itself
+        page.data.map((post) => (
+    <div class="card bg-base-300 lg:w-1/2 w-full h-fit lg:mx-0 mx-6 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title text-2xl">{post.data.title}</h2>
+        <div id="post-info">
+                <span class="text-accent">
+                  {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </span>
+          <span class="mx-2">-</span>
+          {post.data.tags.map((tag) => (
+            <Badge tag={tag} />
+          ))}
+          <hr class="border-1 border-white mt-3" />
+        </div>
+        <Prose>
+          <Render post={post} />
+        </Prose>
+        <div class="card-actions">
+          <a class="btn btn-sm btn-primary" href={`/post/${post.id}`}>
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  ))
+  }
+</main>
+<Pagination next={page.url.next} prev={page.url.prev}/>
+<Footer />
+</body>
+</html>
