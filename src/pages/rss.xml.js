@@ -4,6 +4,7 @@ import { marked } from 'marked';
 
 export async function GET(context) {
     const posts = await getCollection('posts');
+    posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
     return rss({
         title: 'Shibe Drill\'s Website',
         description: "Posts about programming, infrastructure, Linux, and other nerd shit",
