@@ -7,7 +7,7 @@
 This is Cheesecake. Everybody say "Hi, Cheesecake!"
 
 <p align="center">
-  <img src="/cheesecake.png" width="250" alt="A picture of a sitting, plush, white-tailed deer. White spots are visible on its sides."/>
+  <img src="/cheesecake.png" width="250" height="250" alt="A picture of a sitting, plush, white-tailed deer. White spots are visible on its sides."/>
 </p>
 
 <!-- more -->
