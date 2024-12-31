@@ -21,6 +21,7 @@ const { page } = Astro.props;
   <Head title="Shibe Drill | Official Site" description="Shibe Drill's Personal Website" />
   <body class="flex flex-col h-screen">
     <Navbar />
+    <a rel="me" href="https://fosstodon.org/@shibedrill1" style="display: none;">Mastodon</a>
     <main id="posts" class="my-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
       {
         // Do not try to add type safety here, the astro compiler fucking shits itself
