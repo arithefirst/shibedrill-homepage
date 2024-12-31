@@ -28,4 +28,4 @@ Lastly, I felt overwhelmed when looking for functions and keys to configure prog
 
 My goals as of right now are to create a flake that I can use to configure roughly the same user environment on any PC or laptop, with very minor alterations depending on the system. The configurations I had put together beforehand were done in WSL, but the configurations I found in the VM's `configuration.nix` were far more varied and detailed. So at some point, I need to look at both configs, and think of a way to merge some of the necessary bare-metal configuration options into my incomplete WSL flake. I have a spare laptop to test it on now, though, which should help- since I can try using it for school work and get used to the environment.
 
-My current NixOS files are available [here](https://github.shibedrill/nixfiles) if you're interested!
+My current NixOS files are available [here](https://github.com/shibedrill/nixfiles) if you're interested!
