@@ -10,7 +10,7 @@ With the rising threats of state-actor-backed censorship, surveillance, and expl
 
 <!-- more -->
 
-*You can download this post as a Markdown file [here](/src/content/posts/security-for-the-antifascist.md).*
+*Consider downloading this post, using the Print button or Ctrl+P and Print to PDF.*
 
 - A quick foreword: This guide does not assume any preexisting knowledge with regards to Linux, cybersecurity, cryptography, or any other fields. This is strictly a layman's handbook. You do not need to install any specific operating system or buy any specific hardware for this guide to be useful to you. If you wanted a QubesOS review, maybe look elsewhere.
 
