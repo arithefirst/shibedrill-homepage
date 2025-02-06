@@ -33,6 +33,10 @@ Some practical advice for you before we begin:
 - Security is a journey, not a destination. Do not chase "perfect". Anything that makes an adversary's life harder is worthwhile.
 - Never plug in random USBs. Never use airport phone chargers.
 
+Further reading:
+
+- Surveillance Self-Defense: <https://ssd.eff.org/>
+
 Let's begin.
 
 ## Part 1: Threat Models
@@ -158,5 +162,5 @@ I must give you my most heartfelt thanks for reading this. If I've piqued your i
 
 I hope you thorougly enjoyed this guide, and learned a thing or two from it along the way. Be safe.
 
-Revision: 0.1.0  
+Revision: 0.2.0  
 Last modified: 2025-02-06  
