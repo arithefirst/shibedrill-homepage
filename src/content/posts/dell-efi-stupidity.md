@@ -4,6 +4,8 @@
 'tags': ['linux']
 ---
 
+#
+
 _This post has been copied from [my Tumblr blog](https://tumblr.com/shibedrill1). If you've seen it before, this is why._
 
 So I use a shitty ancient laptop. A Dell Latitude E6420 from 2012: i5-2520m CPU, 16gb of RAM, 512gb SSD. Good enough for me. It's slow, it's thick, it's heavy, but it's got a lot of ports, it's sturdy, and it's repairable. I tried to get a newer laptop, one with a faster processor and bigger screen, but it was so thin and flimsy that it crashed if I looked at it wrong or picked it up while it was running. It was entirely plastic and shattered as soon as I dropped my backpack. With the laptop in the _padded laptop compartment_. And somehow, it had a maximum RAM capacity of 12gb- smaller than my shitty Latitude. So I switched back, and I still daily drive this hunk of shit business laptop.

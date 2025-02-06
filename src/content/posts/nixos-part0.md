@@ -4,6 +4,8 @@
 'tags': ['linux']
 ---
 
+#
+
 I began learning NixOS recently, as I have been quickly losing my patience for Windows and its bullshit. Diving in headfirst, these are my notes from my initial investigations.
 
 <!-- more -->
