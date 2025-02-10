@@ -11,6 +11,7 @@ Check out the links below to get in touch with me, or to see the stuff I make & 
 - Discord: [@shibedrill](https://discord.com/users/455089445666947082)
 - PGP Public Key: [321F 19B6 354D 7BE6 B280 B1AA 5FE0 CB25 945E FAA2](/River_0x945EFAA2_public.asc)
 - GitHub: [shibedrill](https://github.com/shibedrill/shibedrill)
+- Personal Git Server: [shibedrill](https://git.shibedrill.site/shibedrill)
 - YouTube: [@ShibeDrill](https://youtube.com/c/shibedrill)
 - Carrd: [riverdev.carrd.co](https://riverdev.carrd.co)
 
