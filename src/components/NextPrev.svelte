@@ -13,7 +13,7 @@
   }
 </script>
 
-<div class="text-center">
+<div class="text-center print:hidden">
   <div class="relative flex py-5 items-center">
     <div class="flex-grow border-t border-white border-1"></div>
     <span class="flex-shrink mx-4 text-base-content">Thanks for Reading! Read another post?</span>

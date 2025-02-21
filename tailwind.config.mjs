@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from 'daisyui';
 import typography from '@tailwindcss/typography';
+import { extractDirectives } from 'astro/runtime/server/hydration.js';
 
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -28,5 +29,10 @@ export default {
       }
     ]
   },
-  plugins: [daisyui, typography]
+  plugins: [daisyui, typography],
+  extend: {
+    screens: {
+      print: { raw: 'print' }
+    }
+  }
 };

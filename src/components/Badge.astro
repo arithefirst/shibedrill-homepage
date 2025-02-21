@@ -1,9 +1,10 @@
 ---
 interface Props {
   tag: string;
+  class?: string;
 }
 
-const { tag } = Astro.props;
+const { tag, class: Class = '' } = Astro.props;
 ---
 
-<a href={`/tags/${tag}`} class="badge badge-accent mr-1 text-accent-content">#{tag}</a>
+<a href={`/tags/${tag}`} class={`badge badge-accent mr-1 text-accent-content ${Class}`}>#{tag}</a>

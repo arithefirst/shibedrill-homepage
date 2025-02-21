@@ -25,16 +25,21 @@ const { Content } = await render(post);
 <html lang="en" class="overscroll-y-none">
   <Head title={`Shibe Drill | ${post.data.title}`} description="An article written by Shibe Drill" />
   <Body>
-    <main slot="content" class="my-6 mx-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
-      <div class="card bg-base-300 lg:w-1/2 w-full lg:mx-0 shadow-xl">
+    <main slot="content" class="print:m-0 my-6 mx-6 flex gap-4 align-center justify-center flex-wrap flex-grow">
+      <div class="card bg-base-300 lg:w-1/2 print:w-full w-full lg:mx-0 shadow-xl print:shadow-none">
         <div class="card-body">
           <div id="post-info">
+            <h4 class="print:block hidden mb-2">
+              This post is originally from <a href="https://shibedrill.site" class="underline font-bold"
+                >shibedrill.site</a
+              >
+            </h4>
             <h2 class="card-title text-2xl mb-2">{post.data.title}</h2>
             {post.data.date.toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-            <span class="mx-2">-</span>
-            {post.data.tags.map((tag) => <Badge tag={tag} />)}
+            <span class="mx-2 print:hidden">-</span>
+            {post.data.tags.map((tag) => <Badge class="print:hidden" tag={tag} />)}
           </div>
-          <hr class="border-white border-1 my-4" />
+          <hr class="border-white border-1 my-4 print:m-0" />
           <Prose>
             <Content />
           </Prose>
