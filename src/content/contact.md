@@ -4,6 +4,41 @@
 
 #
 
+## IMPORTANT: READ THIS BEFORE CONTACTING!
+
+## IF YOU DO NOT READ THIS, I MAY BLOCK YOU!
+
+It is important that anyone wishing to contact me reads this segment. I have a
+lot of difficulty with social interaction, and if you follow these guidelines
+going in, it will make things smoother for everyone involved. ***If you do not
+follow these guidelines, there is a high chance I will block, mute, or ignore
+you.***
+
+These guidelines are subject to change.
+
+### Do:
+
+- Introduce yourself and bring up common
+traits or interests.  
+- Use clear and straightforward language.  
+- Ask questions right away.  
+- State your intentions clearly and set expectations.  
+
+### Do Not:
+
+- Simply say "hiiii" or send a sticker, and expect me to respond.  
+- Say "Can I ask/tell you something/a question?".  
+- Ask invasive questions about my personal life.  
+- Attempt to flirt, date, or roleplay.
+- Solicit purchase or exchange of goods or services.  
+- Expect me to serve as on-call tech support.
+- Expect me to serve as a therapist.
+- Use sarcasm without making it somewhat obvious.  
+- Mistake blunt or frank speech for me being rude or cold.
+- Send unsolicited explicit or suggestive content.
+
+## Where To Find Me
+
 Check out the links below to get in touch with me, or to see the stuff I make & do!
 
 - Signal: [shibedrill.42](https://signal.me/#eu/OhieLDn1UL68-9JMrCa3jafrkOSosKONtAl0hMQ6Gceb7yQdQyxB4qXAX1-i6ZvY)
