@@ -6,8 +6,6 @@ import Body from '../../layouts/Body.astro';
 import Prose from '../../components/Prose.astro';
 import NextPrev from '../../components/NextPrev.svelte';
 import ViewCounter from '../../components/ViewCounter.svelte';
-import BigOlEyeball from '../../images/icons/eye-fill.svg';
-import { Image } from 'astro:assets';
 
 const posts = await getCollection('posts');
 
@@ -44,7 +42,7 @@ const { Content } = await render(post);
               {post.data.tags.map((tag) => <Badge class="print:hidden" tag={tag} />)}
             </div>
             <div class="badge badge-primary ml-auto text-accent-content">
-              <ViewCounter client:load />
+              <ViewCounter client:load article={post.id}/>
             </div>
           </div>
           <hr class="border-white border-1 my-4 print:m-0" />
