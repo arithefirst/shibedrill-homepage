@@ -9,7 +9,7 @@ A custom blog website made for [@shibedrill](https://github.com/shibedrill)
 ## Deploying locally
 
 1. Clone this repository<br>
-   `git clone https://github.com/arithefirst/shibedrill-homepage.git`
+   `git clone https://github.com/shibedrill-home/shibedrill-homepage.git`
 2. Install dependencies
    For this step, I like to use bun, but npm, yarn, pnpm, or any similar tool should work.
    `bun install`
