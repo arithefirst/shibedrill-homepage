@@ -13,7 +13,7 @@ good is it for building operating systems? Only one way to find out.
 <!-- more -->
 
 Recently, I resumed work on [Gila](https://git.shibedrill.site/shibedrill/gila),
-a microkernel OS I began writing in Rust as I was finishing my Operating 
+a microkernel OS I began writing in Rust as I was finishing my Operating
 Systems course in college. It's not in a useful state yet, but regardless,
 I've learned a lot about Rust's limitations as a language and an ecosystem. In
 this post, I'll talk about the areas where Rust excels, and the areas that it
@@ -25,8 +25,8 @@ language itself.
 Cargo, Rust's build system, is the single most important reason I adopted Rust
 as my go-to programming language. Dependency management is stupidly easy, and
 I have never had to fiddle around with build scripts or linker arguments. This
-is obviously complicated when building an OS kernel, as certain linker 
-settings need to be tweaked for the kernel to function with the bootloader, 
+is obviously complicated when building an OS kernel, as certain linker
+settings need to be tweaked for the kernel to function with the bootloader,
 but I was able to find resources that detailed specifically what needed to be
 done.
 
@@ -37,9 +37,9 @@ far less complexity in the central calling code, as nothing changes if the code
 is compiled for a different architecture. I also made certain parts of the OS
 kernel into "features", which could be deactivated at compile-time to save space
 and reduce attack surface. There's no point in compiling UEFI support into a
-kernel that will only be booted on BIOS-only systems. (I did this because I 
+kernel that will only be booted on BIOS-only systems. (I did this because I
 wanted to port Gila to IA32 some day, but couldn't due to a core library not
-supporting it.) In fact, you can even avoid compiling in dependencies for 
+supporting it.) In fact, you can even avoid compiling in dependencies for
 inactive features, by marking them as optional.
 
 ## Memory Safety
@@ -57,10 +57,9 @@ mutex: a structure that can be "locked" to temporarily perform some mutation,
 and then "unlocked" once it goes out of scope.
 
 Unfortunately, widespread use of mutexes can present another problem: deadlocks.
-If a piece of code attempts to gain lock on another resource, but that resource 
-is being held by some other part of the code which won't release the lock, the 
-section that's trying to lock it will never gain lock & continue executing. To 
-avoid this, I have to be careful about where I lock mutexes, and whether it's 
-possible for a piece of code to attempt to lock a resource that some other part 
+If a piece of code attempts to gain lock on another resource, but that resource
+is being held by some other part of the code which won't release the lock, the
+section that's trying to lock it will never gain lock & continue executing. To
+avoid this, I have to be careful about where I lock mutexes, and whether it's
+possible for a piece of code to attempt to lock a resource that some other part
 of the code can lock.
-
