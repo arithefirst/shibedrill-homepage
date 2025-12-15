@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { string } from 'astro:schema';
   import { onMount } from 'svelte';
 
   interface VCResponse {
