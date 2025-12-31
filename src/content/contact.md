@@ -57,19 +57,22 @@ My Monero address is listed below, if you wish to make a donation to support my 
 88sC3FvCs7peQNvKaoMyjYj468BoZBCHC64RRtSVUAYK5rBAZLZa56TWDBFtwXS9f4MCwbLpc6snRDzBs26HyuuJMEcA7Xq
 ```
 
-The message below has been signed with my PGP private key. Thus, you can confirm that this page, and any other page with a signed message, belongs to the same person.
+The message below has been signed with my SSH private key. Thus, you can confirm that this page, and any other page with a signed message, belongs to the same person.
 
 ```text
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
+This message was uploaded by River to https://shibedrill.site on 2025-12-31
+```
 
-This message was uploaded by River to https://www.shibedrill.site on 2024-12-09
------BEGIN PGP SIGNATURE-----
+```text
+-----BEGIN SSH SIGNATURE-----
+U1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgo51bHY/UGmo7ntx451h+ET5ov4
+P78qtSqe3c6GDuqDoAAAAEZmlsZQAAAAAAAAAGc2hhNTEyAAAAUwAAAAtzc2gtZWQyNTUx
+OQAAAEAsSs8U/8BtioSgcGjlp2x0b6B1OZn4uzcrINF9q8qHjZ5Rf4J93bxgjvj+B2dqI4
++h7hHvzabPbLCuR+z97Q4J
+-----END SSH SIGNATURE-----
+```
 
-iHUEARYKAB0WIQQyHxm2NU175rKAsapf4MsllF76ogUCZ1dxYAAKCRBf4MsllF76
-os2qAP90YbUMzN8Q0hMHTSw4gI/npmKLoPTvVZvbiAiVuIHa9QD+KhSmNIhWPF7w
-kN4M9Jwu4kXVpmKu8/B7UVF5dwhSigI=
-=vHC8
------END PGP SIGNATURE-----
-
+Here's the key:
+```text
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKOdWx2P1BpqO57ceOdYfhE+aL+D+/KrUqnt3Ohg7qg6 august@bazzite
 ```
