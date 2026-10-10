@@ -33,7 +33,7 @@ Time for root cause analysis! What specifically is my issue?
 3. I make false assumptions about what parts of the system, or my own process, could be at fault.
 4. I focus heavily on what I *think* is the issue, without analyzing all elements in the chain.
 5. The real issue goes unnoticed.
-6. In inverstigating the red herring, I often exacerbate or change the behavior of the real issue.
+6. In investigating the red herring, I often exacerbate or change the behavior of the real issue.
 7. Frustration.
 
 I often fail to remember anything which isn't written down, so it's not surprising that I would succumb to the fallacy of "oh I'll certainly remember *that* for more than five minutes". This applies to not only what elements of a system I need to analyze, but also what steps I've taken and what parameters I've changed. Failure to accurately catalog the elements of a system and the changes I've done to them is the core of the issue.
